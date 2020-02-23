@@ -57,7 +57,7 @@ def self.all
   end
   
   def sell_pets
-    all_pets = cats + dogs
+    all_pets = cats + dogs #combine classes 
     all_pets.each do |pet|
       pet.mood = "nervous"
       pet.owner = nil 
