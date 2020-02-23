@@ -8,6 +8,7 @@ class Owner
   def initialize(name)  
     @name = name
     @species = "human"
+    @pets = {:dog => [], :cat => []}
     @@all << self
   end 
   
@@ -58,9 +59,8 @@ def self.all
   def sell_pets
     all_pets = cats + dogs
     all_pets.each do |pet|
-    if pet.mood = "nervous"
+      pet.mood = "nervous"
       pet.owner = nil 
-  end 
     end
   end
   
